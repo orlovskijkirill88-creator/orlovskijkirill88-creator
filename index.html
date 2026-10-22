@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Василий Васильевич Пименов</title>
+    <style>
+      :root {
+        --bg-blue: #0b1e3a;
+        --sky-light: #4fa8d6;
+        --cloud-white: #f0f9ff;
+        --text: #ffffff;
+        --accent: #ffca3a;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-image: url("1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        color: var(--text);
+        overflow-x: hidden;
+      }
+
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        z-index: 1;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+        margin: 0 0 1rem 0;
+        line-height: 1.1;
+        text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      }
+
+      p.lead {
+        font-size: 1.3rem;
+        max-width: 700px;
+        line-height: 1.5;
+      }
+
+      .container {
+        max-width: 960px;
+        width: 100%;
+        padding: 2.5rem 1.5rem;
+      }
+
+      .card {
+        background: rgba(11, 30, 58, 0.92);
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        backdrop-filter: blur(8px);
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        color: var(--accent);
+        border-bottom: 2px solid rgba(255,202,58,0.3);
+        padding-bottom: 0.5rem;
+        margin-top: 0;
+      }
+
+      ul { list-style: none; padding: 0; }
+      
+      /* Стилизация пунктов списка в виде заголовка и текста под ним */
+      li { 
+        margin: 1.5rem 0; 
+        padding-left: 1.5rem; 
+        position: relative; 
+      }
+      li::before {
+        content: "•";
+        color: var(--accent);
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      /* Стиль для названия пункта */
+      .achieve-title {
+        display: block;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: var(--accent);
+        margin-bottom: 0.3rem;
+      }
+
+      /* Стиль для растянутого описания под пунктом */
+      .achieve-desc {
+        display: block;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      img.profile {
+        max-width: 100%;
+        height: auto;
+        border: 4px solid var(--accent);
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        display: block;
+        margin: 1rem auto;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        color: rgba(255,255,255,0.5);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="hero">
+      <h1>Василий Васильевич<br>Пименов</h1>
+      <p class="lead">Посвящённая страница о жизни и заслугах В. В. Пименова.</p>
+    </header>
+
+    <main class="container">
+      <!-- Блок биографии -->
+      <section class="card">
+        <h2>Биография</h2>
+        <p>Родился 27 марта 1954 года в областном центре Белорусской ССР городе Витебске в семье рабочего. Русский. Племянник командира партизанского отряда времён Великой Отечественной войны Ильи Мазуркина. В 1971 году окончил 10 классов средней школы № 29 Витебска.
+
+С августа 1971 года — в Советской Армии. В 1975 году окончил Рязанское высшее воздушно-десантное командное дважды Краснознамённое училище имени Ленинского комсомола. С 1975 по 1981 год — командир взвода, заместитель командира роты, командир учебной роты, начальник штаба учебного батальона 301-го учебного парашютно-десантного полка (пос. Гайжюнай, Литовская ССР). Член КПСС с 1975 года.
+        </p>
+      </section>
+
+      <section>
+        <h2>Фотография</h2>
+        <img src="html.jpg.jpg" alt="Василий Васильевич Пименов" class="profile" >
+      </section>
+
+      <!-- Достижения оформленные в виде описания -->
+      <section class="card">
+        <h2>Достижения и вклад</h2>
+        <ul>
+          <li>
+            <span class="achieve-title">Звание:</span>
+            <span class="achieve-desc">Герой Советского Союза (Указ от 13 июня 1984 года, медаль «Золотая Звезда» № 11512).</span>
+          </li>
+          <li>
+            <span class="achieve-title">Подвиг:</span>
+            <span class="achieve-desc">Успешное выполнение боевых задач в Афганистане и проявленный при этом мужество и героизм.</span>
+          </li>
+          <li>
+            <span class="achieve-title">Командование:</span>
+            <span class="achieve-desc">Успешно и умело командовал легендарным 345-м гвардейским отдельным парашютно-десантным полком.</span>
+          </li>
+          <li>
+            <span class="achieve-title">Ордена и государственные награды:</span>
+            <span class="achieve-desc">Заслуженно награжден орденом Ленина, орденом Красной Звезды и орденом «За службу Родине в Вооружённых Силах СССР» III степени.</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2026 Сайт о В. В. Пименове. Материалы — по согласованию с правообладателями.
+    </footer>
+  </body>
+</html>
